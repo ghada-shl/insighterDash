@@ -1,3 +1,96 @@
+
+# Leisure activity satisfaction survey
+
+This is a web-based questionnaire website developed using the Laravel framework. The website is designed to collect data from leisure activities participants, evaluate their satisfaction and demographic factors, and export the data into Power BI for analysis.
+
+# Questionnaire Details
+The questionnaire includes the following questions:
+
+- What is your age?
+- What is your gender?
+- Who did you visit with?
+- What is your education level?
+- Do you have any disabilities?
+- What is your income level?
+- What is your leisure budget range?
+- What was your emotional experience during the activity?
+- How would you rate the quality of service?
+- How would you rate the level of organization?
+- How would you rate the level of cleanliness?
+- How would you rate the staff?
+- How would you rate the costs?
+- How likely are you to visit again?
+
+# PowerBI Analysis
+To view the PowerBI analysis of the collected data, please follow this link: https://app.powerbi.com/view?r=eyJrIjoiZTcxYTk2OWEtYTA3Zi00OTk3LWE2MGMtYTlkZGUyNTE0NzMyIiwidCI6ImNjMjYyNmM1LTcwYjgtNGMzOC05Y2JlLWIzMmIyNzYxNTZiMCJ9.
+
+
+## Features
+
+- A simple and easy-to-use interface for answering the questionnaire questions
+- Data collection for demographic information such as age, gender, education level, income level, and disabilities
+- Data collection for activity-related factors such as emotional experience, quality of service, level of organization, cleanliness, staff, and costs.
+
+
+
+## Installation
+
+Clone the repository to your local machine:
+
+```bash
+
+git clone https://github.com/ghada0shl/lesurvey.git
+```
+    
+Navigate to the project directory:
+
+```bash
+cd comfyq
+```
+Install dependencies using Composer:
+```bash
+composer install
+```
+Copy the .env.example file to .env:
+```bash
+cp .env.example .env
+```
+
+Generate an application key:
+
+```bash
+php artisan key:generate
+```
+
+Set up the database by editing the .env file with your database information:
+
+```bash
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=comfyq
+DB_USERNAME=root
+DB_PASSWORD=
+```
+
+Run the database migrations:
+
+```bash
+php artisan migrate
+```
+
+Start the web server:
+
+```bash
+php artisan serve
+```
+
+## Usage
+
+- Visit http://localhost:8000 in your web browser.
+- Answer the demographic and leisure activity-related questions.
+- Submit the questionnaire.
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
